@@ -31,7 +31,7 @@
             </objects>
             <point key="canvasLocation" x="3297" y="-1212"/>
         </scene>
-        <!--Item 2-->
+        <!--Gestures-->
         <scene sceneID="70R-3b-1ny">
             <objects>
                 <viewController id="0lZ-K3-O2W" sceneMemberID="viewController">
@@ -56,7 +56,7 @@
                             <constraint firstItem="wKp-x6-moc" firstAttribute="centerX" secondItem="epL-fI-lbs" secondAttribute="centerX" id="bGU-DX-y2F"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="gtB-OO-vup"/>
+                    <tabBarItem key="tabBarItem" title="Gestures" image="Gestures.png" id="gtB-OO-vup"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L0r-zC-LNe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -85,7 +85,7 @@
         <scene sceneID="Hfc-wT-gEr">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GLA-Yu-oMr" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Players" id="3ON-6s-gCu"/>
+                    <tabBarItem key="tabBarItem" title="Players" image="Players.png" id="3ON-6s-gCu"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="otq-fg-bk1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -101,4 +101,8 @@
             <point key="canvasLocation" x="2169" y="-1048"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Gestures.png" width="30" height="30"/>
+        <image name="Players.png" width="30" height="30"/>
+    </resources>
 </document>

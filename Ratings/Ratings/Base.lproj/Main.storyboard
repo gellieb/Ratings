@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Playaaaz-->
         <scene sceneID="Vzh-8F-Ykt">
             <objects>
                 <tableViewController id="u4W-Tm-9wY" sceneMemberID="viewController">
@@ -13,10 +13,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="FPH-eh-QGK">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PlayerCell" textLabel="8Co-f6-Xvq" detailTextLabel="bg6-WV-r21" style="IBUITableViewCellStyleSubtitle" id="FPH-eh-QGK">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FPH-eh-QGK" id="tTR-WZ-QOw">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8Co-f6-Xvq">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bg6-WV-r21">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -25,7 +39,7 @@
                             <outlet property="delegate" destination="u4W-Tm-9wY" id="N6a-yy-Hnz"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="bhP-IG-Q3X"/>
+                    <navigationItem key="navigationItem" title="Playaaaz" id="bhP-IG-Q3X"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5CV-LP-OK1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

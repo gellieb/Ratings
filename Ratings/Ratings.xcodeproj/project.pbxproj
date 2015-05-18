@@ -39,6 +39,7 @@
 		23B862971B07EC4C001A869A /* Players@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 23B8627F1B07EC4C001A869A /* Players@2x.png */; };
 		23B8629B1B07F063001A869A /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B8629A1B07F063001A869A /* PlayersViewController.swift */; };
 		23B8629F1B0A5DCC001A869A /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B8629E1B0A5DCC001A869A /* Player.swift */; };
+		23B862A11B0A5F07001A869A /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B862A01B0A5F07001A869A /* SampleData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		23B8627F1B07EC4C001A869A /* Players@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Players@2x.png"; sourceTree = "<group>"; };
 		23B8629A1B07F063001A869A /* PlayersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = "<group>"; };
 		23B8629E1B0A5DCC001A869A /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		23B862A01B0A5F07001A869A /* SampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 				23B862451B07DFE2001A869A /* Supporting Files */,
 				23B8629A1B07F063001A869A /* PlayersViewController.swift */,
 				23B8629E1B0A5DCC001A869A /* Player.swift */,
+				23B862A01B0A5F07001A869A /* SampleData.swift */,
 			);
 			path = Ratings;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				23B8629F1B0A5DCC001A869A /* Player.swift in Sources */,
 				23B8624A1B07DFE2001A869A /* ViewController.swift in Sources */,
 				23B862481B07DFE2001A869A /* AppDelegate.swift in Sources */,
+				23B862A11B0A5F07001A869A /* SampleData.swift in Sources */,
 				23B8629B1B07F063001A869A /* PlayersViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

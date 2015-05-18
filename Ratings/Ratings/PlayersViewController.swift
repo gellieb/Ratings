@@ -6,7 +6,8 @@
 //  Copyright (c) 2015 Angel Baek. All rights reserved.
 //
 
-import Cocoa
+//import Cocoa
+import UIKit
 
 class PlayersViewController: UITableViewController {
 

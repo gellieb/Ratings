@@ -13,7 +13,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PlayerCell" id="FPH-eh-QGK">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PlayerCell" id="FPH-eh-QGK" customClass="PlayerCell" customModule="Ratings" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FPH-eh-QGK" id="tTR-WZ-QOw">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -34,6 +34,11 @@
                                         </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="gameLabel" destination="nxm-lM-5Wp" id="mvc-0L-pMg"/>
+                                    <outlet property="nameLabel" destination="Scs-VD-Khk" id="ifY-hF-CGy"/>
+                                    <outlet property="ratingImageView" destination="HOu-au-hXP" id="IIs-I6-fWJ"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

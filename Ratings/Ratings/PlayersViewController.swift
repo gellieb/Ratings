@@ -23,6 +23,7 @@ class PlayersViewController: UITableViewController {
         return players.count
     }
     
+// Iteration #1-----Subtitle cells. UITableViewCell.textLabel properties to access labels
 //    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
 //      // UITableView.style = subtitle
 //        let cell = tableView.dequeueReusableCellWithIdentifier("PlayerCell", forIndexPath: indexPath) as! UITableViewCell
@@ -37,28 +38,40 @@ class PlayersViewController: UITableViewController {
 //    
 //    }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("PlayerCell", forIndexPath: indexPath) as! UITableViewCell //1
+// Iteration #2-----Customs cell, Using tags to id labels------------
+//    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeueReusableCellWithIdentifier("PlayerCell", forIndexPath: indexPath) as! UITableViewCell //1
+//        
+//        let player = players[indexPath.row] as Player //2
+//        
+//        if let nameLabel = cell.viewWithTag(100) as? UILabel { //3
+//            nameLabel.text = player.name
+//        }
+//        if let gameLabel = cell.viewWithTag(101) as? UILabel {
+//            gameLabel.text = player.game
+//        }
+//        if let ratingImageView = cell.viewWithTag(102) as? UIImageView {
+//            ratingImageView.image = self.imageForRating(player.rating)
+//        }
+//        return cell
+//
+//        
+       // BREAKDOWN:
+       //  1. dequeueReusableCellWithIdentifier will dequeue an existing cell with the reuse identifier PlayerCell if available or create a new one if not.
+       //  2. You look up the Player object corresponding to the row being populated and assign it to player.
+       //  3. The labels and images are looked up by their tags on the cell (custom cell; cannot use UITableViewCell's textLabel and detailLabel's properties. MUST USE TAGS.
+//        
+//    }
+//    
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
+        let cell = tableView.dequeueReusableCellWithIdentifier("PlayerCell", forIndexPath: indexPath) as! PlayerCell
         
-        let player = players[indexPath.row] as Player //2
-        
-        if let nameLabel = cell.viewWithTag(100) as? UILabel { //3
-            nameLabel.text = player.name
-        }
-        if let gameLabel = cell.viewWithTag(101) as? UILabel {
-            gameLabel.text = player.game
-        }
-        if let ratingImageView = cell.viewWithTag(102) as? UIImageView {
-            ratingImageView.image = self.imageForRating(player.rating)
-        }
+        let player = players[indexPath.row] as Player
+        cell.nameLabel.text = player.name
+        cell.gameLabel.text = player.game
+        cell.ratingImageView.image = imageForRating(player.rating)
         return cell
-
-        
-        // BREAKDOWN:
-        //  1. dequeueReusableCellWithIdentifier will dequeue an existing cell with the reuse identifier PlayerCell if available or create a new one if not.
-        //  2. You look up the Player object corresponding to the row being populated and assign it to player.
-        //  3. The labels and images are looked up by their tags on the cell (custom cell; cannot use UITableViewCell's textLabel and detailLabel's properties. MUST USE TAGS.)
-        
     }
     
     func imageForRating(rating:Int) -> UIImage? {

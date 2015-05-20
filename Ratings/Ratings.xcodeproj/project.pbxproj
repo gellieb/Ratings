@@ -40,6 +40,7 @@
 		23B8629B1B07F063001A869A /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B8629A1B07F063001A869A /* PlayersViewController.swift */; };
 		23B8629F1B0A5DCC001A869A /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B8629E1B0A5DCC001A869A /* Player.swift */; };
 		23B862A11B0A5F07001A869A /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B862A01B0A5F07001A869A /* SampleData.swift */; };
+		23B862A31B0D216B001A869A /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B862A21B0D216B001A869A /* PlayerCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,7 @@
 		23B8629A1B07F063001A869A /* PlayersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = "<group>"; };
 		23B8629E1B0A5DCC001A869A /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		23B862A01B0A5F07001A869A /* SampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		23B862A21B0D216B001A869A /* PlayerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 				23B8629A1B07F063001A869A /* PlayersViewController.swift */,
 				23B8629E1B0A5DCC001A869A /* Player.swift */,
 				23B862A01B0A5F07001A869A /* SampleData.swift */,
+				23B862A21B0D216B001A869A /* PlayerCell.swift */,
 			);
 			path = Ratings;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23B862A31B0D216B001A869A /* PlayerCell.swift in Sources */,
 				23B8629F1B0A5DCC001A869A /* Player.swift in Sources */,
 				23B8624A1B07DFE2001A869A /* ViewController.swift in Sources */,
 				23B862481B07DFE2001A869A /* AppDelegate.swift in Sources */,
@@ -525,6 +529,7 @@
 				23B862631B07DFE2001A869A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		23B862641B07DFE2001A869A /* Build configuration list for PBXNativeTarget "RatingsTests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +538,7 @@
 				23B862661B07DFE2001A869A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

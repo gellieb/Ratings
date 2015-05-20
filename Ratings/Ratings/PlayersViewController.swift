@@ -32,6 +32,9 @@ class PlayersViewController: UITableViewController {
         cell.textLabel?.text = player.name
         cell.detailTextLabel?.text = player.game
         return cell
+        
+        // Note: In this app you’re using only one prototype cell but if your table needs to display different kinds of cells then you can simply add additional prototype cells to the storyboard. You can either duplicate the existing cell to make a new one, or increment the value of the Table View’s Prototype Cells attribute. Be sure to give each cell its own re-use identifier, though.
     }
+    
 
 }

@@ -14,3 +14,4 @@ let playersData = [ Player(name: "Angel Baek", game: "Tic-Tac-Toe", rating: 4),
     Player(name: "Will Gabrielsen", game: "Spin the Bottle", rating: 5),
     Player(name: "Danny Chang", game: "Texas Hold 'em Poker", rating: 2)
 ]
+

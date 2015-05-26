@@ -14,6 +14,12 @@ class PlayerDetailsViewController: UITableViewController {
     @IBOutlet weak var detailLabel: UILabel!
     var player:Player!
     var game:String = "Chess"
+    @IBAction func selectedGame(segue:UIStoryboardSegue){
+        if let gamePickerViewController = segue.sourceViewController as? GamePickerViewController, selectedGame = gamePickerViewController.selectedGame{
+            detailLabel.text = selectedGame
+            game = selectedGame
+        }
+    }
     
     //adding initializer and deinitializer
         // only see these when opening and closing Add Player screen. Reassure that VCs are loaded on-demand only.

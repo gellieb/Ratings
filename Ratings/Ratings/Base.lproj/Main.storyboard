@@ -175,6 +175,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Zt6-rg-1TV" kind="unwind" identifier="SaveSelectedGame" unwindAction="selectedGame:" id="nKs-FC-mJk"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -185,6 +188,7 @@
                     <navigationItem key="navigationItem" title="Choose Game" id="q6h-Ea-smc"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tyw-Eb-sWb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Zt6-rg-1TV" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="6404" y="-1212"/>
         </scene>

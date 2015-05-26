@@ -10,6 +10,8 @@ import UIKit
 
 class GamePickerViewController: UITableViewController {
     var games:[String]!
+    var selectedGame:String? = nil
+    var selectedGameIndex:Int? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,12 +21,6 @@ class GamePickerViewController: UITableViewController {
                  "Spin the Bottle",
                  "Texas Hold'em Poker",
                  "Tic-Tac-Toe"]
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
     override func didReceiveMemoryWarning() {
@@ -50,6 +46,12 @@ class GamePickerViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("GameCell", forIndexPath: indexPath) as! UITableViewCell
         cell.textLabel?.text = games[indexPath.row]
+        
+        if indexPath.row == selectedGameIndex {
+            cell.accessoryType = .Checkmark
+        } else {
+            cell.accessoryType = .None
+        }
         
         return cell
     }

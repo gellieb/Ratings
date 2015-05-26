@@ -11,6 +11,19 @@ import UIKit
 
 class PlayersViewController: UITableViewController {
     
+    // adding 2 unwind methods: cancel segue and save-when-done segue
+        // create IBAction function then link to exit in order to create action segue and unwind segue
+    @IBAction func cancelToPlayersViewController(segue:UIStoryboardSegue){
+        
+    }
+    
+    @IBAction func savePlayerDetail(segue:UIStoryboardSegue){
+        
+    }
+    
+    
+    
+    
     // adding a Player array property
     // you can set up the (sample) data here in the VC but because this data may be provided from a plist or a SQL file, it's wise to handle loading the data outside of the VC
     var players: [Player] = playersData
@@ -19,7 +32,7 @@ class PlayersViewController: UITableViewController {
         return 1
     }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection sectoin: Int) -> Int {
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return players.count
     }
     

@@ -21,6 +21,10 @@ class GamePickerViewController: UITableViewController {
                  "Spin the Bottle",
                  "Texas Hold'em Poker",
                  "Tic-Tac-Toe"]
+        // takes selectedGame passed in from PlayerDetailsVC and translates it to an index to place a checkmark on that game
+        if let game = selectedGame{
+            selectedGameIndex = find(games, game)!
+        }
     }
 
     override func didReceiveMemoryWarning() {

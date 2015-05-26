@@ -136,7 +136,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Done" style="done" id="5yS-Aj-7fx">
                             <connections>
-                                <segue destination="7ra-c7-o9j" kind="unwind" unwindAction="savePlayerDetail:" id="GFH-rA-yxO"/>
+                                <segue destination="7ra-c7-o9j" kind="unwind" identifier="SavePlayerDetail" unwindAction="savePlayerDetail:" id="GFH-rA-yxO"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

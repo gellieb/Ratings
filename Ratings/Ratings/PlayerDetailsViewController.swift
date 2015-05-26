@@ -53,8 +53,15 @@ class PlayerDetailsViewController: UITableViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // segue.identifier.SavePlayerDetail == unwind segue going back to Players list
         if segue.identifier == "SavePlayerDetail" {
             player = Player(name: self.nameTextField.text, game: game, rating: 1)
+        }
+        // segue.identifier.PickGame == push segue going forward to Game Picker screen
+        if segue.identifier == "PickGame" {
+            if let gamePickerViewController = segue.destinationViewController as? GamePickerViewController {
+                gamePickerViewController.selectedGame = game
+            }
         }
     }
     

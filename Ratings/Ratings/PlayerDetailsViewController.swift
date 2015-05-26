@@ -13,6 +13,7 @@ class PlayerDetailsViewController: UITableViewController {
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var detailLabel: UILabel!
     var player:Player!
+    var game:String = "Chess"
     
     //adding initializer and deinitializer
         // only see these when opening and closing Add Player screen. Reassure that VCs are loaded on-demand only.
@@ -27,12 +28,7 @@ class PlayerDetailsViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        detailLabel.text = game
     }
 
     override func didReceiveMemoryWarning() {

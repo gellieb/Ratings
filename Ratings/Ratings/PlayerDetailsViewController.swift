@@ -54,7 +54,7 @@ class PlayerDetailsViewController: UITableViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "SavePlayerDetail" {
-            player = Player(name: self.nameTextField.text, game: "Chess", rating: 1)
+            player = Player(name: self.nameTextField.text, game: game, rating: 1)
         }
     }
     

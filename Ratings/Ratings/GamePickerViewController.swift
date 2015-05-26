@@ -55,6 +55,23 @@ class GamePickerViewController: UITableViewController {
         
         return cell
     }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        
+        //Other row is selected - need to deselect it
+        if let index = selectedGameIndex {
+            let cell = tableView.cellForRowAtIndexPath(NSIndexPath(forRow: index, inSection: 0))
+            cell?.accessoryType = .None
+        }
+        
+        selectedGameIndex = indexPath.row
+        selectedGame = games[indexPath.row]
+        
+        //Update the checkmark for the current row
+        let cell = tableView.cellForRowAtIndexPath(indexPath)
+        cell?.accessoryType = .Checkmark
+    }
 
     /*
     // Override to support conditional editing of the table view.

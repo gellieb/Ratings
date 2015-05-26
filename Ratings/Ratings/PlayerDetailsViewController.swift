@@ -31,16 +31,12 @@ class PlayerDetailsViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
+        // deleted data source below this line. prevents static cells from working properly
 
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
+    // user can tap anywhere in the first cell to activate text field
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath){
+        if indexPath.section == 0 {
+            nameTextField.becomeFirstResponder()
+        }
     }
-    */
-
 }

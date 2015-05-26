@@ -108,14 +108,24 @@ class GamePickerViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    // update the player's game details
+        // sender parameter is the obj that initiated the segue-- in this case the game cell that was selected.
+        // use cell's indexPath to locate the selected game in the games array then set the selectedGame so it's available in the unwind segue
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "SaveSelectedGame" {
+            if let cell = sender as? UITableViewCell {
+                let indexPath = tableView.indexPathForCell(cell)
+                selectedGameIndex = indexPath?.row
+                if let index = selectedGameIndex {
+                    selectedGame = games[index]
+                }
+            }
+        }
     }
-    */
+
 
 }

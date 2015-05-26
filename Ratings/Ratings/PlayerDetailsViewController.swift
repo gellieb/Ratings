@@ -14,6 +14,16 @@ class PlayerDetailsViewController: UITableViewController {
     @IBOutlet weak var detailLabel: UILabel!
     var player:Player!
     
+    //adding initializer and deinitializer
+        // only see these when opening and closing Add Player screen. Reassure that VCs are loaded on-demand only.
+    required init(coder aDecoder: NSCoder) {
+        println("init PlayerDetailsViewController")
+        super.init(coder: aDecoder)
+    }
+    
+    deinit {
+        println("deinit PlayerDetailsViewController")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,4 +55,14 @@ class PlayerDetailsViewController: UITableViewController {
             player = Player(name: self.nameTextField.text, game: "Chess", rating: 1)
         }
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
